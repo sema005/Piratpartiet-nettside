@@ -1,0 +1,77 @@
+body {
+    min-height: 100vh;
+}
+
+#kontakt {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    background-color: white;
+}
+
+.kontakt-bilde {
+    align-self: center;
+}
+
+.container-kontakt {
+    display: grid;
+    grid-template-columns: 499px auto auto;
+    grid-auto-rows: calc(100vh - 100px);
+    gap: 8rem;
+    padding-left: 5rem; 
+    padding-top: 10rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    align-items: end;
+}
+
+.kontakt-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    border: 0.2rem solid black;
+    align-self: center;
+    border-radius: 1rem;
+}
+
+
+.kontakt-bilde img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+    border-radius: 25rem 25rem 0 0;
+}
+
+#kontakt .kontakt-info .e-post {
+    padding-top: 2rem;  
+    padding-bottom: 2rem;
+}
+
+#kontakt .kontakt-info p {
+    font-size: 3.5vh;
+}
+
+#kontakt .kontakt-info h2 {
+    font-size: 5vh;
+    padding-top: 2rem;
+}
+
+.kontakt-sosiale {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 30rem;
+    border: 2px solid black;
+    height: 6rem;
+    align-items: center;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    align-self: right;
+}
+
+.kontakt-sosiale img {
+    height: 47px;
+    display: block;
+}

@@ -1,0 +1,71 @@
+#politikken{
+
+    background-size: cover;
+    background-position: center end;
+}
+
+.container-politikken {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    gap: 2rem;  
+    justify-content: center;
+    padding: 10rem;
+    padding-top: 6rem;
+    grid-auto-flow: dense;
+    height: 170rem;
+    width: 140rem;
+    margin: auto;
+}
+
+.container-politikken > a {
+    display: flex;
+    border-radius: 3rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem black;
+    cursor: default;
+}
+
+.container-politikken > a >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-politikken > a p {
+    color: white;
+    font-size: 2rem;
+}
+
+.container-politikken .overlay:hover {
+    opacity: 1;
+}
+
+.container-politikken .overlay{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-image: linear-gradient( transparent 0.1%, black);
+    padding: 0 1.6rem 1.6rem 1.6rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.container-politikken .bred {
+    grid-column: span 2;
+}
+
+.container-politikken .stort {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.container-politikken .vertical {
+    grid-row: span 2;
+}
